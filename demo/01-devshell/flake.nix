@@ -1,6 +1,7 @@
 {
   # Flake inputs
   inputs = {
+    # Latest Nix packages collection from https://github.com/NixOS/nixpkgs
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
@@ -16,7 +17,7 @@
           # Packages
           packages = with pkgs; [ hello gcc which ];
           # Env variables
-          MY_VAR = "foo";
+          MY_VAR = "01-devshell";
         };
     };
 }

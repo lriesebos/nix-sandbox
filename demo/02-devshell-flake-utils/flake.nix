@@ -2,6 +2,7 @@
   # Flake inputs
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # Additional input for flake utils (written in Nix)
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -19,13 +20,14 @@
             hello
             gcc
             which
+            # Python 3.10 with specific packages
             (pkgs.python310.withPackages (ps: with ps; [
               numpy
               flake8
             ]))
           ];
           # Env variables
-          MY_VAR = "foo";
+          MY_VAR = "02-devshell";
         };
       }
     );
