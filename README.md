@@ -21,9 +21,12 @@ The default Nix development environment can be started using the `nix develop` c
 
 The following resources might be useful when writing Nix:
 
+- <https://nixos.wiki/wiki/Flakes>
 - <https://nixos.org/manual/nix/unstable/introduction.html>
 - <https://teu5us.github.io/nix-lib.html>
 - <https://fasterthanli.me/series/building-a-rust-service-with-nix/part-10>
+- <https://www.tweag.io/blog/2020-05-25-flakes/>
+- <https://search.nixos.org/packages>
 
 Useful projects:
 
