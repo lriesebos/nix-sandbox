@@ -28,11 +28,14 @@
         overlays = [ (import rust-overlay) ];
         pkgs = import nixpkgs { inherit system overlays; };
         # Define the Rust toolchain
-        rustToolchain = pkgs.rust-bin.stable."1.65.0".default;
+        rustToolchain = pkgs.rust-bin.stable."1.65.0".default.override {
+          extensions = [ "rust-src" ];
+        };
         # Make the crane library and override the toolchain
         craneLib = (crane.mkLib pkgs).overrideToolchain rustToolchain;
 
-        # hello_rs package
+        # Use crane to build hello_rs package
+        # Note: make sure Cargo.lock is updated using `cargo generate-lockfile`
         hello_rs = craneLib.buildPackage {
           # Source of the package
           src = craneLib.cleanCargoSource (craneLib.path ./.);
@@ -43,17 +46,23 @@
             pkgs.libiconv
           ];
         };
+
       in
       {
         # Define packages
         packages.default = hello_rs;
 
-        devShells.default = pkgs.mkShell {
-          # Packages
-          packages = with pkgs; [
-            hello_rs
-            rustToolchain
-          ];
+        devShells = {
+          # Default development environment
+          default = pkgs.mkShell {
+            packages = with pkgs; [
+              rustToolchain
+            ];
+          };
+          # Environment with the hello_rs installed
+          installed = pkgs.mkShell {
+            packages = [ hello_rs ];
+          };
         };
       }
     );
