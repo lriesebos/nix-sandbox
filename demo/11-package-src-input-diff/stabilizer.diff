@@ -1,0 +1,12 @@
+diff --git a/setup.py b/setup.py
+index 18a2d1f..794822a 100644
+--- a/setup.py
++++ b/setup.py
+@@ -14,6 +14,6 @@ setup(
+         "scipy",
+         "matplotlib",
+         "gmqtt",
+-        "miniconf-mqtt@git+https://github.com/quartiq/miniconf@v0.6.3#subdirectory=py/miniconf-mqtt",
++        "miniconf-mqtt",
+     ],
+ )

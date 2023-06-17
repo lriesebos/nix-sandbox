@@ -1,0 +1,112 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1685518550,
+        "narHash": "sha256-o2d0KcvaXzTrPRIo0kOLV0/QXHhDQ5DTi+OxcjO8xqY=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "a1720a10a6cfe8234c0e93907ffe81be440f4cef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "gmqtt-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1674154800,
+        "narHash": "sha256-lhvRRZsrJy2U7b705GTlquAP/LwKEmInuVC4zzivmKk=",
+        "owner": "wialon",
+        "repo": "gmqtt",
+        "rev": "190d12156890efcfc5099fea0f7ef3ce072c4a27",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wialon",
+        "repo": "gmqtt",
+        "type": "github"
+      }
+    },
+    "miniconf-mqtt-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1683707561,
+        "narHash": "sha256-mwE0FxBOhFvWWPjpyTtWekMuXO4/LGXkWZhyr6uotaU=",
+        "owner": "quartiq",
+        "repo": "miniconf",
+        "rev": "8be449dcd9be7c838720c21223dac0841595dd26",
+        "type": "github"
+      },
+      "original": {
+        "owner": "quartiq",
+        "repo": "miniconf",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1686592866,
+        "narHash": "sha256-riGg89eWhXJcPNrQGcSwTEEm7CGxWC06oSX44hajeMw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0eeebd64de89e4163f4d3cf34ffe925a5cf67a05",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "gmqtt-src": "gmqtt-src",
+        "miniconf-mqtt-src": "miniconf-mqtt-src",
+        "nixpkgs": "nixpkgs",
+        "stabilizer-src": "stabilizer-src"
+      }
+    },
+    "stabilizer-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1686728949,
+        "narHash": "sha256-HM0UyMcmREhJPFx3VgFq5+NkYoS0KrTiWB1bGLVHBtk=",
+        "owner": "quartiq",
+        "repo": "stabilizer",
+        "rev": "fe52389acf6bc16d7e887373d401ed62c0ab38f9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "quartiq",
+        "repo": "stabilizer",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
