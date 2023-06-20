@@ -54,6 +54,8 @@ Useful projects:
 
 - <https://github.com/numtide/flake-utils>
 - <https://github.com/DeterminateSystems/zero-to-nix>
+- <https://www.cachix.org/>
+- <https://devenv.sh/>
 
 ## Tools
 
