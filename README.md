@@ -21,22 +21,22 @@ The default Nix development environment can be started using the `nix develop` c
 
 From the [Nix manual](https://nixos.org/manual/nix/unstable/installation/upgrading.html):
 
-Multi-user Nix users on macOS can upgrade Nix by running:
-
-```sh
-sudo -i sh -c 'nix-channel --update && nix-env --install --attr nixpkgs.nix && launchctl remove org.nixos.nix-daemon && launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist'
-```
-
-Single-user installations of Nix should run this:
+*Single-user installations* of Nix should run this:
 
 ```sh
 nix-channel --update; nix-env --install --attr nixpkgs.nix nixpkgs.cacert
 ```
 
-Multi-user Nix users on Linux should run this with sudo:
+*Multi-user Nix users on Linux* should run this with sudo:
 
 ```sh
-nix-channel --update; nix-env --install --attr nixpkgs.nix nixpkgs.cacert; systemctl daemon-reload; systemctl restart nix-daemon
+sudo -i nix-channel --update && sudo -i nix-env --install --attr nixpkgs.nix nixpkgs.cacert && sudo systemctl daemon-reload && sudo systemctl restart nix-daemon
+```
+
+*Multi-user Nix users on MacOS* can upgrade Nix by running:
+
+```sh
+sudo -i sh -c 'nix-channel --update && nix-env --install --attr nixpkgs.nix && launchctl remove org.nixos.nix-daemon && launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist'
 ```
 
 ## Resources
