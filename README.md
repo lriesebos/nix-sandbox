@@ -57,6 +57,7 @@ Useful projects:
 - <https://github.com/DeterminateSystems/zero-to-nix>
 - <https://www.cachix.org/>
 - <https://devenv.sh/>
+- <https://github.com/DeterminateSystems/magic-nix-cache-action>
 
 ## Tools
 
