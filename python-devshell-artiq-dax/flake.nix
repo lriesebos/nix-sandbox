@@ -38,7 +38,7 @@
     {
       # Default development shell
       devShells.x86_64-linux.default = pkgs.mkShell {
-        buildInputs = [
+        packages = [
           # Python packages
           (pkgs.python3.withPackages (ps: [
             # ARTIQ
