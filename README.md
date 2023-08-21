@@ -50,6 +50,7 @@ The following resources might be useful when writing Nix:
 - <https://fasterthanli.me/series/building-a-rust-service-with-nix/part-10>
 - <https://www.tweag.io/blog/2020-05-25-flakes/>
 - <https://search.nixos.org/packages>
+- <https://www.nixhub.io/>
 
 Useful projects:
 
