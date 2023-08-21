@@ -7,12 +7,14 @@ Additionally, some Nix resources are also listed here.
 
 Nix can be installed by following the instructions on the [Nix package manager installation website](https://nixos.org/download.html).
 
-Add the following configuration to `~/.config/nix/nix.conf` to enable flakes:
+For single-user installations, add the following configuration to `~/.config/nix/nix.conf` to enable flakes:
 
 ```plain
 experimental-features = nix-command flakes
 bash-prompt-prefix = (nix)
 ```
+
+For multi-user installations, the same configuration needs to be added to `/etc/nix/nix.conf`.
 
 Now Nix flakes should be available on your system.
 The default Nix development environment can be started using the `nix develop` command in a directory with a `flake.nix` file.
