@@ -28,10 +28,11 @@
             yarn
             nodejs_18
             go_1_19
+            google-cloud-sdk
             (pkgs.python311.withPackages (ps: with ps; [
               numpy
             ]))
-            (rust-bin.stable."1.70.0".default.override { extensions = [ "rust-src" ]; })
+            (rust-bin.stable."1.71.0".default.override { extensions = [ "rust-src" ]; })
           ];
         };
       }
