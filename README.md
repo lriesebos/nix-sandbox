@@ -57,6 +57,7 @@ The following resources might be useful when writing Nix:
 Useful projects:
 
 - <https://github.com/numtide/flake-utils>
+- <https://github.com/numtide/devshell>
 - <https://github.com/DeterminateSystems/zero-to-nix>
 - <https://www.cachix.org/>
 - <https://devenv.sh/>
