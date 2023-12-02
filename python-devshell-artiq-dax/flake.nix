@@ -26,14 +26,21 @@
         artiqpkgs.follows = "artiq";
       };
     };
+    # Example of a non-flake input
+    entangler-core-src = {
+      url = git+https://gitlab.com/duke-artiq/entangler-core.git;
+      flake = false;
+    };
   };
 
   # Flake outputs
-  outputs = { self, nixpkgs, artiq, artiq-comtools, dax, dax-comtools, dax-applets }:
+  outputs = { self, nixpkgs, artiq, artiq-comtools, dax, dax-comtools, dax-applets, entangler-core-src }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       artiqpkgs = artiq.packages.x86_64-linux // artiq-comtools.packages.x86_64-linux;
       daxpkgs = dax.packages.x86_64-linux // dax-comtools.packages.x86_64-linux // dax-applets.packages.x86_64-linux;
+      entangler-core = pkgs.callPackage "${entangler-core-src}/nix/default.nix" { inherit pkgs artiqpkgs; buildGateware = false; };
+
     in
     {
       # Default development shell
@@ -48,6 +55,8 @@
             daxpkgs.dax
             daxpkgs.dax-comtools
             daxpkgs.dax-applets
+            # Entangler core
+            entangler-core
 
             # Test packages
             ps.pytest

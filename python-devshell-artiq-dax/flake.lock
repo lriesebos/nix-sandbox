@@ -158,6 +158,22 @@
         "url": "https://gitlab.com/duke-artiq/dax-comtools.git"
       }
     },
+    "entangler-core-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1667341690,
+        "narHash": "sha256-iVzGRpHSjS5X6EMzPUuHgxyujFSZqkgYolXu9y7NFdo=",
+        "ref": "refs/heads/master",
+        "rev": "618796991d5c71d32c7042f53a90571e867e6fb1",
+        "revCount": 288,
+        "type": "git",
+        "url": "https://gitlab.com/duke-artiq/entangler-core.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://gitlab.com/duke-artiq/entangler-core.git"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1659877975,
@@ -253,6 +269,7 @@
         "dax": "dax",
         "dax-applets": "dax-applets",
         "dax-comtools": "dax-comtools",
+        "entangler-core-src": "entangler-core-src",
         "nixpkgs": [
           "artiq",
           "nixpkgs"
