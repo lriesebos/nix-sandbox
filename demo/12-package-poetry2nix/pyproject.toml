@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "foo"
+version = "0.1.0"
+description = ""
+authors = ["Leon Riesebos"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+numpy = "^1.26.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[tool.poetry.scripts]
+foo_hello = "foo.main:hello"
+foo_add_i32 = "foo.main:add_i32"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
