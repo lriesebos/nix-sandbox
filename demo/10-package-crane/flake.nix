@@ -15,8 +15,6 @@
       url = "github:ipetkov/crane";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        flake-utils.follows = "flake-utils";
-        rust-overlay.follows = "rust-overlay";
       };
     };
   };
@@ -28,7 +26,7 @@
         overlays = [ (import rust-overlay) ];
         pkgs = import nixpkgs { inherit system overlays; };
         # Define the Rust toolchain
-        rustToolchain = pkgs.rust-bin.stable."1.65.0".default.override {
+        rustToolchain = pkgs.rust-bin.stable."1.74.0".default.override {
           extensions = [ "rust-src" ];
         };
         # Make the crane library and override the toolchain
@@ -59,7 +57,7 @@
               rustToolchain
             ];
           };
-          # Environment with the hello_rs installed
+          # Environment with the hello_rs installed (similar to `nix shell`)
           installed = pkgs.mkShell {
             packages = [ hello_rs ];
           };
