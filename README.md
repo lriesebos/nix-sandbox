@@ -54,6 +54,7 @@ The following resources might be useful when writing Nix:
 - <https://www.tweag.io/blog/2020-05-25-flakes/>
 - <https://search.nixos.org/packages>
 - <https://www.nixhub.io/>
+- <https://jade.fyi/blog/flakes-arent-real/>
 
 Useful projects:
 
