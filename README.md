@@ -55,7 +55,7 @@ The following resources might be useful when writing Nix:
 - <https://search.nixos.org/packages>
 - <https://www.nixhub.io/>
 - <https://jade.fyi/blog/flakes-arent-real/>
-- <https://stackoverflow.com/a/44621588>
+- <https://stackoverflow.com/a/44621588> and <https://www.reddit.com/r/NixOS/comments/8tkllx/standard_project_structure/>
 
 Useful projects:
 
