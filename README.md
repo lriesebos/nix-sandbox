@@ -96,3 +96,4 @@ Potential alternatives for a Nix cache (instead of Hydra) are:
 - <https://github.com/helsinki-systems/harmonia>
 - <https://www.cachix.org/>
 - <https://github.com/edolstra/nix-serve>
+- <https://github.com/typhon-ci/typhon>
