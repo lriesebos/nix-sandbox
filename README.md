@@ -48,6 +48,7 @@ The following resources might be useful when writing Nix:
 - <https://wiki.nixos.org/>
 - <https://nix.dev/>
 - <https://nixos.wiki/wiki/Flakes>
+- <https://nixos.org/manual/nixpkgs/stable/#chap-functions>
 - <https://nixos.org/manual/nix/unstable/introduction.html>
 - <https://teu5us.github.io/nix-lib.html>
 - <https://ryantm.github.io/nixpkgs/>
