@@ -61,6 +61,7 @@ The following resources might be useful when writing Nix:
 - <https://stackoverflow.com/a/44621588> and <https://www.reddit.com/r/NixOS/comments/8tkllx/standard_project_structure/>
 - <https://zaynetro.com/explainix>
 - <https://github.com/ryan4yin/nixos-and-flakes-book>
+- <https://scrive.github.io/nix-workshop/index.html>
 
 Useful projects:
 
