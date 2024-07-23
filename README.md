@@ -47,7 +47,7 @@ The following resources might be useful when writing Nix:
 
 - <https://wiki.nixos.org/>
 - <https://nix.dev/>
-- <https://nixos.wiki/wiki/Flakes>
+- <https://wiki.nixos.org/wiki/Flakes>
 - <https://nixos.org/manual/nixpkgs/stable/#chap-functions>
 - <https://nixos.org/manual/nix/unstable/introduction.html>
 - <https://teu5us.github.io/nix-lib.html>
@@ -98,7 +98,7 @@ pkgs.mkShell {
 
 Potential alternatives for a Nix cache (instead of Hydra) are:
 
-- <https://nixos.wiki/wiki/Binary_Cache>
+- <https://wiki.nixos.org/wiki/Binary_Cache>
 - <https://github.com/helsinki-systems/harmonia>
 - <https://www.cachix.org/>
 - <https://github.com/edolstra/nix-serve>
