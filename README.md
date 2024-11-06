@@ -99,6 +99,7 @@ pkgs.mkShell {
 Potential alternatives for a Nix cache (instead of Hydra) are:
 
 - <https://wiki.nixos.org/wiki/Binary_Cache>
+- <https://nix.dev/tutorials/nixos/binary-cache-setup.html>
 - <https://github.com/helsinki-systems/harmonia>
 - <https://www.cachix.org/>
 - <https://github.com/edolstra/nix-serve>
