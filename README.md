@@ -6,17 +6,17 @@ Additionally, some Nix resources are also listed here.
 ## Installation
 
 Nix can be installed by following the instructions on the [Nix package manager installation website](https://nixos.org/download.html).
+For personal systems with one user, we recommend single-user installation.
+Any server installations or installations on systems with multiple users, the multi-user installation is recommended.
 
-For single-user installations, add the following configuration to `~/.config/nix/nix.conf` to enable flakes:
+To enable flakes, add the following configuration to `~/.config/nix/nix.conf` or `/etc/nix/nix.conf` for single-user or multi-user installations, respectively:
 
 ```plain
 experimental-features = nix-command flakes
 bash-prompt-prefix = (nix)
 ```
 
-For multi-user installations, the same configuration needs to be added to `/etc/nix/nix.conf`.
-
-Now Nix flakes should be available on your system.
+Now, Nix flakes should be available on your system.
 The default Nix development environment can be started using the `nix develop` command in a directory with a `flake.nix` file.
 
 ## Updates
@@ -46,6 +46,7 @@ sudo -i sh -c 'nix-channel --update && nix-env --install --attr nixpkgs.nix && l
 The following resources might be useful when writing Nix:
 
 - <https://wiki.nixos.org/>
+- <https://noogle.dev/>
 - <https://nix.dev/>
 - <https://wiki.nixos.org/wiki/Flakes>
 - <https://nixos.org/manual/nixpkgs/stable/#chap-functions>
