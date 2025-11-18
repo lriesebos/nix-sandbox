@@ -16,7 +16,7 @@
         devShells.default = pkgs.mkShell {
           # Packages
           packages = with pkgs; [
-            nixpkgs-fmt
+            nil
           ];
         };
 
