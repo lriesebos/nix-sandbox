@@ -1,5 +1,7 @@
 # Nix sandbox
 
+**This project has moved to a new repository: <https://gitlab.com/lriesebos/nix-sandbox>**
+
 This project is a sandbox for Nix development.
 Additionally, some Nix resources are also listed here.
 
